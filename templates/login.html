@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+<div class="center">
+    <h1 id="message">Login</h1>
+    <form action="javascript:Login()">
+        <div class="data">
+            <input id='name'type="text" required>
+            <span></span>
+            <label>UserName</label>
+        </div>
+        <div class="data">
+            <input id="password" type="password" required>
+            <span></span>
+            <label>Password</label>
+        </div>
+
+        <input type="submit" value ="Login">
+        <div class="signup"> First time here ?
+            <a href ='/register'>Register</a>
+        </div>
+    </form>
+</div>
+<script src="js/login_page.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="/css/members.css">
+</head>
+<body onload="javascript:LoadMembers()">
+  <div class="topnav">
+    <a class="active" href="/">Log Out</a>
+    <a id="members" href="/members">Members</a>
+    <a href="/budgets">Budgets</a>
+    <a id="action" href=/actions>Actions</a>
+  </div>
+    <div class="center">
+      <h1>Members</h1>
+      <div id="members_list" class="members">
+
+      </div>
+      <form id="add_members" action="add_members.html">
+        <input type="submit" value ="Add member">
+      </form>
+      <form id="cancel" action="menu.html">
+          <button class="exit">Close</button>
+      </form>
+  </div>
+  <script>
+    const queryString = window.location.href.split('/');
+    const index = queryString[queryString.length-1];
+    document.getElementById("action").setAttribute("href",`/actions/${index}`);
+    document.getElementById("members").setAttribute("href",`/members/${index}`);
+    document.getElementById("cancel").setAttribute("action",`/menu/${index}`);
+    document.getElementById("add_members").setAttribute("action",`/add_members/${index}`);
+  </script>
+    <script src="/js/members_page.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+</html>

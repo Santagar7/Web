@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="css/budgets.css">
+</head>
+<body onload="javascript:GetMyBudgets()">
+    <div class="topnav">
+      <a  class="active" href="/">Log Out</a>
+    </div>
+    <div class="center">
+      <h1>My budgets</h1>
+      <div class="budgets" id="budgets">
+      </div>
+      <form action="/create_budget">
+        <input class="creator" type="submit" value ="Create new budget">
+      </form>
+  </div>
+  <script src="js/budgets_page.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+</html>

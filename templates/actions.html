@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Add Event</title>
+    <link rel="stylesheet" href="/css/actions.css">
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="/">Log Out</a>
+        <a id="members" href="/members">Members</a>
+        <a href="/budgets">Budgets</a>
+        <a id="action" href=/actions>Actions</a>
+      </div>
+    <div class="center">
+        <h1 id="message">Create new Action</h1>
+        <form  action="javascript:MakeAction()">
+            <div class="data">
+                <input id="amount" type="number" required>
+                <span></span>
+                <label>Amount</label>
+            </div>
+            <div class="data">
+                <input id="reason" type="text" required>
+                <span></span>
+                <label>reason/source</label>
+            </div>
+            <input type="submit" value ="Save">
+        </form>
+        <form id="cancel" action='/budgets'>
+            <button class="exit">Cancel</button>
+        </form>
+    </div>
+<script>
+    const queryString = window.location.href.split('/');
+    const index = queryString[queryString.length-1];
+    document.getElementById("action").setAttribute("href",`/actions/${index}`);
+    document.getElementById("members").setAttribute("href",`/members/${index}`);
+    document.getElementById("cancel").setAttribute("action",`/menu/${index}`);
+    </script>
+    <script src="/js/actions_page.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+</html>

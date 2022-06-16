@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign In Page</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+<div class="center">
+    <h1 id="message">Register</h1>
+    <form action="javascript:Register()">
+        <div class="data">
+            <input id="name" type="text" required>
+            <span></span>
+            <label>Name</label>
+        </div>
+        <div class="data">
+            <input id="password" type="password" required>
+            <span></span>
+            <label>Password</label>
+        </div>
+        <div class="data">
+            <input id="repeat_password" type="password" required>
+            <span></span>
+            <label>Repeat Password</label>
+        </div>
+        <div class="data">
+            <input id="firstname" type="text" required>
+            <span></span>
+            <label>Firstname</label>
+        </div>
+        <div class="data">
+            <input id="lastname" type="text" required>
+            <span></span>
+            <label>Lastname</label>
+        </div>
+        <div class="data">
+            <input id="email" type="email" required>
+            <span></span>
+            <label>Email</label>
+        </div>
+        <input type="submit" value ="Register">
+        <div class="signup"> Already have account ?
+            <a href ='/'>Login</a>
+        </div>
+    </form>
+</div>
+<script src="js/register_page.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+</html>
