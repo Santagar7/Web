@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render correctly 1`] = `
+<div
+  className="budgets_page"
+>
+  <div
+    className="create_budget not_active"
+  >
+    <div
+      className="center"
+    >
+      <h1
+        id="message"
+      >
+        Create new budget
+      </h1>
+      <form>
+        <input
+          data-testid="name"
+          id="name"
+          required={true}
+          type="text"
+        />
+        <button
+          onClick={[Function]}
+        >
+          Submit
+        </button>
+      </form>
+      <button>
+        Cancel
+      </button>
+    </div>
+  </div>
+  <div
+    className="extra"
+  >
+    <div
+      className="topnav"
+    >
+      <a
+        className="active"
+        onClick={[Function]}
+      >
+        Log Out
+      </a>
+      <a
+        data-testid="members"
+        href="/"
+        id="members"
+        onClick={[Function]}
+      >
+        Members
+      </a>
+      null:
+      <a
+        data-testid="budgets"
+        href="/budgets"
+        onClick={[Function]}
+      >
+        Budgets
+      </a>
+      null:
+      <a
+        data-testid="action"
+        href="/"
+        id="action"
+        onClick={[Function]}
+      >
+        Actions
+      </a>
+    </div>
+  </div>
+  <div
+    className="center"
+  >
+    <h1>
+      My budgets
+    </h1>
+    <div
+      className="budgets"
+      id="budgets"
+    />
+    <button
+      onClick={[Function]}
+    >
+      Create a budget
+    </button>
+  </div>
+</div>
+`;

@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render correctly 1`] = `
+<div
+  className="menu"
+>
+  <div
+    className="extra"
+  >
+    <div
+      className="topnav"
+    >
+      <a
+        className="active"
+        onClick={[Function]}
+      >
+        Log Out
+      </a>
+      <a
+        data-testid="members"
+        href="/"
+        id="members"
+        onClick={[Function]}
+      >
+        Members
+      </a>
+      null:
+      <a
+        data-testid="budgets"
+        href="/budgets"
+        onClick={[Function]}
+      >
+        Budgets
+      </a>
+      null:
+      <a
+        data-testid="action"
+        href="/"
+        id="action"
+        onClick={[Function]}
+      >
+        Actions
+      </a>
+    </div>
+  </div>
+  <div
+    className="wrapper"
+  >
+    <div
+      className="money"
+    >
+      <h1
+        id="money"
+      >
+        Current balance : 0
+      </h1>
+    </div>
+    <table
+      id="actions"
+    >
+      <thead>
+        <tr>
+          <th>
+            Made by
+          </th>
+          <th>
+            Purpose/Source
+          </th>
+          <th>
+            Time
+          </th>
+          <th>
+            Amount
+          </th>
+        </tr>
+      </thead>
+      <tbody />
+    </table>
+  </div>
+</div>
+`;

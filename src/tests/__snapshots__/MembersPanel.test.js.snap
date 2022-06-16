@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render correctly 1`] = `
+<div
+  className="panel"
+>
+  <div
+    className="center"
+  >
+    <h1>
+      All Members
+    </h1>
+    <div
+      className="members"
+      id="members_list"
+    />
+    <form>
+      <button
+        onClick={[Function]}
+        type="button"
+      >
+        Add member
+      </button>
+    </form>
+    <form
+      id="cancel"
+    >
+      <button
+        className="exit"
+        onClick={[Function]}
+        type="button"
+      >
+        Cancel
+      </button>
+    </form>
+  </div>
+</div>
+`;

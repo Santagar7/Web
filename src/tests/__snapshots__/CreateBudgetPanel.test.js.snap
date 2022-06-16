@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render correctly 1`] = `
+<div
+  className="create_budget not_active"
+>
+  <div
+    className="center"
+  >
+    <h1
+      id="message"
+    >
+      Create new budget
+    </h1>
+    <form>
+      <input
+        data-testid="name"
+        id="name"
+        required={true}
+        type="text"
+      />
+      <button
+        onClick={[Function]}
+      >
+        Submit
+      </button>
+    </form>
+    <button>
+      Cancel
+    </button>
+  </div>
+</div>
+`;

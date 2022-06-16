@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render correctly 1`] = `
+<div
+  className="panel"
+>
+  <div
+    className="center"
+  >
+    <h1
+      id="message"
+    >
+      Create new Action
+    </h1>
+    <form>
+      <input
+        id="amount"
+        placeholder="Amount.."
+        required={true}
+        type="number"
+      />
+      <input
+        id="reason"
+        placeholder="Reason/Sourse.."
+        required={true}
+        type="text"
+      />
+      <button
+        onClick={[Function]}
+      >
+        Save
+      </button>
+    </form>
+    <form
+      id="cancel"
+    >
+      <button
+        className="exit"
+        onClick={[Function]}
+        type="button"
+      >
+        Cancel
+      </button>
+    </form>
+  </div>
+</div>
+`;
