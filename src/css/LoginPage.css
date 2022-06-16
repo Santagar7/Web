@@ -1,0 +1,105 @@
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-image: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(241,198,186,1) 34%, rgba(148,187,233,1) 100%);
+    height: 100vh;
+    font-family: arial;
+    overflow: hidden;
+  }
+
+.center {
+    margin: 180px auto !important;
+    width: 440px;
+    position: relative;
+    background: white;
+    border-radius: 10px;
+    padding-bottom: 35px;
+    z-index: 5;
+}
+.center h1{
+    text-align: center;
+    padding: 5px 0 10px 0;
+    border-bottom: 1px solid silver;
+    user-select: none;
+    border-radius: 10px 10px 0 0;
+}
+.center .main {
+    padding: 0 60px;
+    box-sizing: border-box;
+}
+
+.main .data {
+    position: relative;
+    border-bottom: 2px solid silver;
+    margin: 30px 0;
+}
+
+.data input {
+    width: 100%;
+    padding: 0 5px;
+    height: 20px;
+    border: none;
+    font-size: 14px;
+    background: none;
+    outline: none;
+}
+.data label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: silver;
+    transition: 0.2s;
+    transform: translateY(-50%);
+    font-size: 14px;
+    pointer-events: none;
+    user-select: none;
+}
+.data span::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: blue;
+    transition: 0.5s;
+}
+.data input:focus ~ label, .data input:not(:placeholder-shown) ~ label {
+    top: -5px;
+    color: blue;
+}
+.data input:focus ~ span::before, .data input:not(:placeholder-shown) ~ span::before {
+    width: 100%;
+}
+input[type=submit] {
+    width: 100%;
+    height: 30px;
+    border: 1px solid silver;
+    background: HoneyDew;
+    border-radius: 25px;
+    font-size: 16px;
+    color: blue;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+input[type=submit]:hover {
+    border-color: blue;
+    transition: 0.4s;
+}
+
+.signup {
+    margin: 30px 0;
+    font-size: 18px;
+    color: black;
+  }
+  .signup a {
+    color: blue;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .signup a:hover {
+    color: blue;
+    text-decoration: underline;
+  }
